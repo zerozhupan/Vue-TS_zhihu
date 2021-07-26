@@ -1,5 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
+import Vue3Module from '../views/Vue3Module.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -14,7 +15,12 @@ const routes: Array<RouteRecordRaw> = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  {
+    path: '/vue3Module',
+    name: 'Vue3Module',
+    component: Vue3Module
+  },
 ]
 
 const router = createRouter({
