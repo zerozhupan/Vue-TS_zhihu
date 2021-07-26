@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '../views/Home.vue'
 import Vue3Module from '../views/Vue3Module.vue'
+import ShowTeleport from '../views/ShowTeleport.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,6 +22,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Vue3Module',
     component: Vue3Module
   },
+  {
+    path: '/showTeleport',
+    name: 'ShowTeleport',
+    component: ShowTeleport
+  }
 ]
 
 const router = createRouter({

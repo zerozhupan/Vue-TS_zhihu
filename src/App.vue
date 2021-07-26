@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>|
-    <router-link to="/vue3module">Vue3Module</router-link>
+    <router-link to="/vue3module">Vue3Module</router-link>|
+    <router-link to="/showTeleport">showTeleport</router-link>
   </div>
   <router-view />
 </template>
